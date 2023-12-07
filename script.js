@@ -58,3 +58,8 @@ typeJs();
 const viewportHeight =
   window.innerHeight - (window.safeAreaInsets?.bottom ?? 0);
 document.documentElement.style.setProperty("--vh", `${viewportHeight}px`);
+
+// copyright year
+const currentYear = new Date().getFullYear();
+console.log(currentYear);
+document.getElementById("currentYear").textContent = currentYear;
